@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un recorrido por el Universo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: black;
+            overflow-x: hidden;
+            font-family: Arial, sans-serif;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Estilos para títulos */
+        h1 {
+            text-align: center;
+            margin: 40px 0 20px;
+            font-size: 4rem; /* Título principal */
+        }
+
+        h2 {
+            text-align: center;
+            margin: 40px 0 20px;
+            font-size: 3rem; /* Subtítulos un poco más pequeños */
+        }
+
+        /* Autor */
+        .autor {
+            font-size: 1.5rem;
+            text-align: center;
+            margin-bottom: 170px;
+        }
+
+        /* Cuadros de texto */
+        .cuadro {
+            width: 80%;
+            background-color: rgba(255, 255, 255, 0.05);
+            color: white;
+            padding: 30px;
+            font-size: 1.2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            text-align: justify;
+            max-width: 900px;
+            line-height: 1.6;
+            margin-bottom: 115px;
+        }
+
+        /* Estrellas */
+        .estrella {
+            position: absolute;
+            background-color: white;
+            border-radius: 50%;
+            animation: parpadeo 1s infinite;
+            width: 3px;
+            height: 3px;
+        }
+
+        @keyframes parpadeo {
+            0% { opacity: 1; }
+            50% { opacity: 0.6; }
+            100% { opacity: 1; }
+        }
+
+        #estrellas {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        /* Cuadro blanco al final */
+        .cuadro-blanco {
+            width: 80%;
+            background-color: white;
+            color: black;
+            padding: 30px;
+            font-size: 1.2rem;
+            text-align: left;
+            margin-top: 50px; /* Ajustar la distancia entre los cuadros */
+            margin-bottom: 150px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+        }
+
+        /* Estilo para las viñetas con enlaces */
+        .viñetas {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .viñetas a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .viñetas a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilo para el cuadro con imágenes */
+        .cuadro-imagenes {
+            width: 80%;
+            background-color: rgba(255, 255, 255, 0.05);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 150px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            max-width: 900px;
+        }
+
+        .imagenes-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .imagen {
+            margin: 20px;
+            text-align: center;
+        }
+
+        .imagen img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .imagen p {
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+
+        /* Cuadro blanco final con enlace */
+        .cuadro-final {
+            width: 80%;
+            background-color: white;
+            color: black;
+            padding: 30px;
+            font-size: 1.5rem;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+        }
+
+        .cuadro-final a {
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .cuadro-final a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="estrellas"></div>
+
+    <h1>Un recorrido por el Universo</h1>
+    <div class="autor">Hecho por Jose Angel Franco Gutierrez</div>
+
+    <!-- Nuevo subtítulo agregado -->
+    <h2>Una belleza Cósmica</h2>
+
+    <div class="cuadro">
+        <p>
+            El universo es un lugar increíblemente fascinante, un vasto y misterioso espacio que alberga cientos de miles de galaxias, planetas, estrellas y otros fenómenos que desafían nuestra comprensión. Esta inmensidad es tan asombrosa como aterradora, pues en su enorme extensión se ocultan misterios que aún no podemos ni imaginar, más allá de lo que nuestros telescopios y tecnologías actuales nos permiten observar. Las preguntas sobre lo que existe en lo más profundo del cosmos continúan siendo un enigma, y la idea de que hay tanto por descubrir mantiene viva nuestra curiosidad.
+        </p>
+        <p>
+            Este tema en particular me cautivó en cuanto comencé a explorarlo, sobre todo por los increíbles fenómenos que ocurren fuera de nuestro propio sistema solar. Es impresionante saber que, en algún lugar del espacio, existen fenómenos como los agujeros negros, objetos tan masivos que ni siquiera la luz puede escapar de ellos, estrellas de neutrones que son los restos de gigantes estelares y poseen una densidad inimaginable, o planetas con características extrañas que parecen sacados de una historia de ciencia ficción. Estos fenómenos, aunque parezcan excepcionales, son bastante comunes en el vasto universo, lo que hace que nuestra comprensión del espacio sea aún más asombrosa y compleja. Cada nueva observación, cada descubrimiento, abre una puerta a un universo mucho más grande y misterioso de lo que jamás pudimos haber soñado.
+        </p>
+    </div>
+
+    <h2>El Terror Oculto del Espacio</h2>
+
+    <div class="cuadro">
+        <p>
+            El universo puede llegar a ser tan fascinante como aterrador por un simple factor: el miedo a lo desconocido. Esta sensación nace del hecho de que, aunque hemos logrado increíbles avances científicos, apenas hemos arañado la superficie de todo lo que existe más allá de nuestro pequeño rincón cósmico.
+        </p>
+        <p>
+            Desde nuestra perspectiva, podríamos considerarnos como la única especie de vida inteligente en el universo conocido. Sin embargo, cuando miramos la inmensidad del cosmos, nos damos cuenta de lo insignificantes que somos, comparables a una simple hormiga perdida en un vasto desierto. Nuestra galaxia, la Vía Láctea, es solo una entre miles de millones, dispersas a lo largo del universo, y este, para hacerlo aún más abrumador, se encuentra en constante expansión, alejándose a velocidades tan extremas que apenas podemos calcularlas con precisión.
+        </p>
+        <p>
+            Esta expansión interminable abre la puerta a un sinfín de posibilidades. Entre ellas, una de las más intrigantes y desconcertantes es la posibilidad de que, en algún rincón remoto de una galaxia lejana, exista otra forma de vida tan o incluso más inteligente que nosotros. Quizás seres que, al igual que nosotros, miran hacia las estrellas preguntándose si están solos. O tal vez civilizaciones tan avanzadas que ya hayan logrado conquistar los misterios que nosotros apenas comenzamos a formular.
+        </p>
+        <p>
+            Pensar en ello no solo despierta nuestra curiosidad, sino también un profundo temor: el miedo de no saber qué hay allá afuera, de enfrentarnos a lo inconcebible, y de entender que en la escala del universo, somos apenas un susurro en la vastedad del infinito.
+        </p>
+    </div>
+
+    <!-- Cuadro blanco con viñetas -->
+    <div class="cuadro-blanco">
+        <p>En el universo existen fenómenos fascinantes y complejos que han desconcertado a científicos durante siglos. A continuación, se presentan algunos de estos fenómenos, los cuales puedes explorar más a fondo:</p>
+        <ul class="viñetas">
+            <li><a href="https://es.wikipedia.org/wiki/Agujero_negro" target="_blank">Agujeros Negros</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/Agujero_blanco" target="_blank">Agujeros Blancos</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/Cu%C3%A1sar" target="_blank">Cuásares</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/P%C3%BAlsar" target="_blank">Púlsares</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/Nebulosa" target="_blank">Nebulosas</a></li>
+        </ul>
+    </div>
+
+    <!-- Cuadro con imágenes -->
+    <div class="cuadro-imagenes">
+        <h2>Fenómenos Astronómicos</h2>
+        <div class="imagenes-container">
+            <div class="imagen">
+                <img src="Agujero_negro.jpg" alt="Agujero Negro">
+                <p>Agujero Negro</p>
+            </div>
+            <div class="imagen">
+                <img src="Agujero_blanco.jpg" alt="Agujero Blanco">
+                <p>Agujero Blanco</p>
+            </div>
+            <div class="imagen">
+                <img src="Cuasar.jpg" alt="Cuásar">
+                <p>Cuásar</p>
+            </div>
+            <div class="imagen">
+                <img src="Pulsar.jpg" alt="Púlsar">
+                <p>Púlsar</p>
+            </div>
+            <div class="imagen">
+                <img src="Nebulosa.jpg" alt="Nebulosa">
+                <p>Nebulosa</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Último cuadro con enlace al video -->
+    <div class="cuadro-final">
+        <p>¿Qué tan grande es el Universo realmente?</p>
+        <a href="https://youtu.be/U9WOMerccoM" target="_blank">Haz clic aquí para ver el video.</a>
+    </div>
+
+    <script>
+        const cantidadEstrellas = 200;
+
+        function crearEstrellas() {
+            const fondo = document.getElementById('estrellas');
+            for (let i = 0; i < cantidadEstrellas; i++) {
+                const estrella = document.createElement('div');
+                estrella.classList.add('estrella');
+
+                const x = Math.random() * window.innerWidth;
+                const y = Math.random() * window.innerHeight;
+
+                estrella.style.left = `${x}px`;
+                estrella.style.top = `${y}px`;
+
+                const tamaño = Math.random() * 3 + 1;
+                estrella.style.width = `${tamaño}px`;
+                estrella.style.height = `${tamaño}px`;
+
+                fondo.appendChild(estrella);
+            }
+        }
+
+        crearEstrellas();
+    </script>
+</body>
+</html>
